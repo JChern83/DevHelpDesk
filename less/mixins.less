@@ -1,0 +1,37 @@
+.custom-btn (@bg-color, @width, @font-color) {
+    display: block;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: @font-color;
+
+
+    &:hover{
+        background-color: @font-color;
+        color: @bg-color;
+    }
+}
+
+.help-section .text-part .btn {
+    .custom-btn(#2F4F4F, 300px, white)
+
+
+}
+
+.help-section .text-part .btn {
+    margin-top: 2%;
+    margin-left: 37%;
+
+    @media @tablet {
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+    @media @phone {
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+}

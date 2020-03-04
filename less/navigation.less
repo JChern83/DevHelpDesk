@@ -1,0 +1,90 @@
+.navbar {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #d4d7de;
+	width: 100%;
+	height: 70px;
+    z-index: 1;
+    
+    .nav {
+        display: flex;
+        justify-content: right;
+        list-style: none;
+        margin-right: 12%;
+      
+        
+    }
+}
+
+.logo {
+	flex: 1 1 auto;
+	margin-left: 10%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 3.5rem;
+}
+
+
+
+a {
+	margin: 30px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+    font-size: 1.7rem;
+
+    @media @phone {
+        font-size: 1.5rem;
+    }
+    
+}
+a:hover {
+	color: #4682b4;
+	text-decoration: underline;
+}
+
+@media @tablet {
+    .banner-section {
+    width: 800px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-left: 1%;
+    }
+a {
+    margin: 10px;
+    margin-left: 5%;
+}
+
+}
+
+@media @phone { 
+    .logo{
+        margin-right: 5%;
+        font-size: 3rem;
+    }
+
+    .navbar {
+        margin-bottom: 2%;
+    }
+    .nav {
+        width: 100%;
+        margin-right: 20%;
+    }
+    .nav a {
+        margin-top: 10px;
+    }
+    
+   }
+
+   @media @phone{
+    .banner-section {
+    width: auto;
+    }
+    }
